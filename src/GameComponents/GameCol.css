@@ -1,0 +1,10 @@
+.GameCol {
+  display: inline-block;
+  width: 75px;
+  height: 550px;
+  padding-right: 25px;
+}
+
+.GameCol:nth-child(4) {
+  padding-right: 0;
+}
