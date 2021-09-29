@@ -3,6 +3,7 @@
   width: 75px;
   height: 550px;
   padding-right: 25px;
+  vertical-align: top;
 }
 
 .GameCol:nth-child(4) {

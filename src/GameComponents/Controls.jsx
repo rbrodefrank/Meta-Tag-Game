@@ -5,10 +5,10 @@ class Controls extends React.Component {
   render() {
   return (
       <div className="Controls">
-        <button className='Left button' onKeyPress={this.props.keyPress} onClick={this.props.moveLeft}>Left</button>
-        <button className='Right button' onKeyPress={this.props.keyPress} onClick={this.props.moveRight}>Right</button>
-        <button className='Pickup button'>Pickup</button>
-        <button className='Drop button'>Drop</button>
+        <button className='Left button' onClick={this.props.moveLeft}>Left</button>
+        <button className='Right button' onClick={this.props.moveRight}>Right</button>
+        <button className='Pickup button' onClick={this.props.pickUpTag}>Pickup</button>
+        <button className='Drop button' onClick={this.props.dropTag}>Drop</button>
       </div>
     );
   }
