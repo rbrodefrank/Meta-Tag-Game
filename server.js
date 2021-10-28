@@ -10,10 +10,14 @@ app.use(cors());
 // parse requests of content-type - application/json
 app.use(express.json());
 
+// Serve up static assets (usually on heroku)
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
+
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(express.static(path.resolve(__dirname, '../client/build')));
 app.use(routes);
 
 // set port, listen for requests
