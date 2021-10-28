@@ -135,7 +135,7 @@ class  Game extends React.Component {
       API.getTags(gameID).then(results => {
         let shuffledTags = this.shuffle(results.data);
         let tagArr = [];
-        let tagLimit = 1;
+        let tagLimit = 20;
         for(let i=0; i<shuffledTags.length; i++) {
           tagArr.push(shuffledTags[i].tag);
           if(tagLimit>0 && i>=tagLimit-1) break;
@@ -150,6 +150,7 @@ class  Game extends React.Component {
           // console.log(results.data[i]);
           if(results.data[i].image_id == gameID) {
             var imageSrc = imgFolder(`./${results.data[i].image_file_name}`);
+            this.setState({finished: false});
             // console.log('imagSrc', imageSrc);
             $('#Game').css('background-image', `url(${imageSrc.default})`);
             $('#viewImageSrc').attr("src", imageSrc.default);
