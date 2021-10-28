@@ -1,0 +1,33 @@
+.toMain {
+  position: absolute;
+  width: 75px;
+  top:12px;
+  transform: translateX(12px);
+  z-index: 1;
+}
+
+.model {
+  display: none;
+  position: absolute;
+  margin: 20px;
+  padding: 10px;
+  z-index: 2;
+  border: 1px solid black;
+  border-radius: 6px;
+  background: white;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.model .button {
+  display: inline-block;
+  background-color: #0d6efd;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  padding: 10px 20px;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px 25px;
+}

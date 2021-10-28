@@ -1,0 +1,11 @@
+.Include {
+  display: inline-block;
+  width: 50px;
+  height: 475px;
+  bottom: -100px;
+  vertical-align: top;
+  /* background-color: #198754; */
+  background-color: #3fcc8b;
+  z-index: -5;
+  position: relative;
+}

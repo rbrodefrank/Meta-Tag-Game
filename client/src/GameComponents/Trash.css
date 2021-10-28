@@ -1,0 +1,11 @@
+.Trash {
+  display: inline-block;
+  width: 50px;
+  height: 475px;
+  bottom: -100px;
+  vertical-align: top;
+  /* background-color: #dc3545; */
+  background-color: #e36673;
+  z-index: -5;
+  position: relative;
+}

@@ -1,0 +1,64 @@
+#finished .button {
+  margin-top: 1rem;
+}
+
+.form-button {
+  margin-left:10px;
+}
+
+#Game {
+  text-align: center;
+  min-height: 100vh;
+  /* background-image: url(/src/images/P-181-0001.jpg); */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.GameScreen {
+  width: 375px;
+  height: 550px;
+  min-width: 375px;
+  margin: auto;
+}
+
+#Player {
+  height: 50px;
+  width: 50px;
+  background-image: url('../icons/player-0.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  bottom: 27px;
+  left: 0px;
+}
+
+#Player .HeldTag {
+  display: inline-block;
+  position: relative;
+  top: -25px;
+  left: 25px;
+  transform: translate(-50%, -100%);
+  min-width: 0px;
+  background-image: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.model-close {
+  position: absolute;
+  right: 10px;
+}
+
+#viewImage {
+  display: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+#viewImage img {
+  width: 100%;
+}
