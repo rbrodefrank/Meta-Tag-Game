@@ -13,13 +13,7 @@ app.use(express.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const db = require("./models");
-
-// simple route
-app.get("/", (req, res) => {
-  res.json({ message: "Welcome to meta tag game." });
-});
-
+app.use(express.static(path.resolve(__dirname, '../client/build')));
 app.use(routes);
 
 // set port, listen for requests
