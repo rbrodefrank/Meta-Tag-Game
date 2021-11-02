@@ -22,7 +22,7 @@ class  Game extends React.Component {
     //Drop Variables
     dropTags: [],
     dropCount: 0,
-    dropTime: 2,
+    dropTime: 1,
     dropInterval: 4,
     dropTagsAmmount: 0,
 
