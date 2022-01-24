@@ -156,7 +156,7 @@ class  Game extends React.Component {
             $('#viewImageSrc').attr("src", imageSrc.default);
             break;
           }
-          if(i<=30) break; //Limit images to first 30
+          if(i>=30) break; //Limit images to first 30
         }
       });
     }
